@@ -1,0 +1,295 @@
+{
+  "title":"Hi! I'm Chris",
+  "personal_data" : {
+    "name" : "Krzysztof Kokosiński",
+    "supporting_text":"Programmer, developer, sound engeneering and beer brewing hobbyst.",
+    "metric" : {
+      "born" : "10.06.1987",
+      "address" : "Rabczańska 16, <br>30-698 Kraków",
+      "e-mail" : "kokosiarz@gmail.com",
+      "mobile" : "+48 531 044 134"
+    },
+
+    "social":[
+      {
+        "name" : "facebook",
+        "url" : "https://www.facebook.com/kokosiarz",
+        "img" : "img/facebook.png"
+      },
+      {
+        "name" : "instagram",
+        "url" : "https://www.instagram.com/grandmaenjoysmusic/",
+        "img" : "img/instagram.png"
+      },
+      {
+        "name" : "github",
+        "url" : "https://github.com/kokosiarz/",
+        "img" : "img/github.png"
+      },
+      {
+        "name" : "soundcloud",
+        "url" : "https://www.instagram.com/grandmaenjoysmusic/",
+        "img" : "img/soundcloud.png"
+      }]
+  },
+  "projects" : [
+    {
+      "name" : "http://www.grandmaenjoysmusic.pl/",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p> I made this webpage for me - the audio mixer. </p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://www.grandmaenjoysmusic.pl/"
+      }
+    },
+    {
+      "name" : "Space Tracker",
+      "tags" : "sound DSP",
+      "html_description" :
+        "<p> I wanted to have a plugin for dynamically solving frequency clashes between different tracks of musical projects. Current version is a prototype developed in JSFX. V++ VST/AAX version developement is pending</p><p> JSFX, typescript, IPlug, c++ </p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://www.grandmaenjoysmusic.pl/plugins"
+      }
+    },
+    {
+      "name" : "Fault Detection criteria",
+      "tags" : "data science",
+      "html_description" :
+        "<p> This year I had opportunity to help with an RND task of optimizing fault detection algorithm and finding optimal operational parameters for it.</p><p> Python, Pandas, Scipy </p>",
+    },
+    {
+      "name" : "drugiplan.com",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>In cooperation with Arkadiusz Salawa, we have created an online reservation service for wedding gadgets suplier. </p><p>Wordpress + Woocommerce + jQuery + CSS</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://drugiplan.com/"
+      }
+    },
+    {
+      "name" : "szkolazlotnictwa.pl",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>This is the third version of page I have made for Szkoła Złotnictwa. From Wordpress through .NET/Umbraco to React, evolution of this page reflects my journey through technologies.</p><p>Technologies: React, Material UI</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://szkolazlotnictwa.pl/"
+      }
+    },
+    {
+      "name" : "harmonogram",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>When I was working only on 4/5 time i needed tool to calculate how much hours should I spend at work, and to report my worktime. This is how Harmonogram Tool started.</p>><p>jQuery + Javascript + HTML + CSS</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"/harmonogram/"
+      }
+    },
+    {
+      "name" : "blog.szkolazlotnictwa.pl",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>Another project for Szkola Zlotnictwa was to create a blog for sharing school's activities and knowledge from field of Jewelry. As what was needed was a simple to maintain blog we decided to use a standard WP template.</p><p>Technologies: Wordpress</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"blog.szkolazlotnictwa.pl"
+      }
+    },
+    {
+      "name" : "Client management system for Szkoła Złotnictwa",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>Another cooperation with Szkoła Złotnictwa. This time it is custom client management system, able to store financial info, timeplans and issue invoices.</p><p>Technologies: Django, Bootstrap, jQuery</p>"
+    },
+    {
+      "name" : "Zbigniew Kokosiński homepage",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>When my father said that he needs to refresh his homepage I kneew it will be an interesting task. He insisted on having his minimalistic page in plain HTML so he could edit it himself.</p><p>Technologies: HTML, Bootstrap</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://riad.pk.edu.pl/~zk/"
+      }
+    },
+    {
+      "name" : "magdalenamaslerz.pl",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>Magdalena is contemporary jewelry maker. She wanted me to make a bilingual webpage for her, so she could shere photos of her work, posts and links. We decided to set our starting point with template using masonry.js and modify it according to the needs.</p><p>Technologies: Wordpress, masonry.js, polylang</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://magdalenamaslerz.pl/"
+      }
+    },
+    {
+      "name" : "This portfolio",
+      "tags" : "webdesign",
+      "html_description" :
+        "<p>In the 90s everybody who had internet connection and some HTML know-how had a homepage. Today we have our Twitters, Instagrams, Facebooks, but I decided to regain control of my internet visit-card and made this page :)</p><p>Technologies: Flask, JSON, Material Design Lite</p>",
+      "button" : {
+        "button_label":"Refresh",
+        "button_href":""
+      }
+    },
+    {
+      "name" : "Dust Bowl",
+      "tags" : "webdesign sound",
+      "html_description" :
+        "<p> From year 2011 I have been guitar and keyboard player in a blues-rock band Dust Bowl. Together we have played several gigs and recorder an EP </p><p>When we decided, that we need a webpage, I was the one to do it ;) (Bootstrap + Umbraco CMS) </p>",
+      "button" : {
+        "button_label":"Visit & Listen",
+        "button_href":"http://dustbowl.pl/"
+      }
+    },
+    {
+      "name" : "Profanus EP",
+      "tags" : "sound",
+      "html_description" :
+        "  <p>One day in 2016 old friend of mine called me and asked whether I would help his band record an EP. And that is how my deep plunge into death metal started. </p><p>All parts, except for drums, were recorded by me in my homestudio. I also did mix, mastering, and a little bit of produ... Oh, nevermind, just take a listen if you wish:",
+      "button" : {
+        "button_label":"Listen",
+        "button_href":"http://profanus.bandcamp.com/"
+      }
+    },
+    {
+      "name" : "Circle Placid",
+      "tags" : "sound filmmaking",
+      "html_description" :
+        "<p>Playing in a blues band is really cool thing to do, but after a hundread 12-bar blueses played and milion of pentatonic trips all over the fretboard you may start to think of some change.</p><p>Change has come as a cooperation with Jerry on vocals and me basically doing everything else. Our first approach was 'let's become avant-garde of the new wave of polish black metal!'. Did we manage to? Not really, but we still do like the output :)</p>",
+      "button" : {
+        "button_label":"Listen",
+        "button_href":"https://www.youtube.com/watch?v=a74ASPC34ew&list=PLekQG6L6JMJ2KLAWBngrNhRViY5bmu1xJ"
+      }
+    },
+    {
+      "name" : ">>Gęstwa<< Brewery",
+      "tags" : "brewing",
+      "html_description" :
+        "<p>There is a point in every mans life, when he feels he should do something important in his life. Like brew a beer.</p><p>Our first beer was a stout. We started brewing straight from malt, no umanly extracts allowed. And thats how it started, since now we have brewed about 20 beers, (I hope this page is up to date! :D) mainly with strong american hop character.</p><p>If you know polish you can read about it on Jerry's blog:</p>",
+      "button" : {
+        "button_label":"Visit",
+        "button_href":"http://jerrybrewery.pl/tag/warzenie/"
+      }
+    },
+    {
+      "name" : "Miasto z OFF'u",
+      "tags" : "sound filmmaking",
+      "html_description" :
+        "          <p>What is better a challange for amateur photographer, and music producer, than a movie project? </p><p>During hot summer of 2012 I had opportunity to work with amazing people on polish-belarusian cinemathographic project >>Masto z OFF'u<<. The idea was simple: integrate young people from Poland and Belarus while teaching them filmmaking and shooting independent footage with one common element: the city. During project I had opportunity to try my chances in acting, operating camera, score writing and sound production.</p>",
+      "button" : {
+        "button_label":"Watch",
+        "button_href":"https://www.youtube.com/watch?v=7JhxEmQ0fLk"
+      }
+    }
+
+  ],
+
+  "skill_groups" : [
+    {
+      "name":"programming languages",
+      "skills" : [
+        {
+          "name" : "Python 3",
+          "level" : "60"
+        },
+        {
+          "name" : "Javascript",
+          "level" : "30"
+        },
+        {
+          "name" : "C++",
+          "level" : "20"
+        },
+        {
+          "name" : "Erlang",
+          "level" : "20"
+        },
+        {
+          "name" : "SQL",
+          "level" : "20"
+        }
+      ]
+    },
+    {
+      "name" : "Tools",
+      "skills" : [
+        {
+          "name" : "Version control",
+        "subskills":"Git, IBM Clearcase, Gerrit"
+        },
+        {
+          "name" : "Kanban tools:",
+          "subskills":"Jira, Scrummy"
+          },
+        {
+          "name" : "Operating Systems (user level)",
+          "subskills":"Windows, Linux"
+        },
+        {
+          "name" : "Software",
+          "subskills":"Eclipse, Wireshark, Reaper DAW, DaVinci Resolve, Gimp, Inkscape, Darktable, MS Office, Open Office"
+        }
+      ]
+    },
+    {
+      "name" : "Other",
+      "skills" : [
+        {
+          "name" : "Protocols",
+          "subskills":"TCP/IP, Diameter, LDAP"
+        },
+        {
+          "name" : "Web frameworks",
+          "subskills":"JQuery, Google Material Design, Bootstrap, Flask"
+        },
+        {
+          "name" : "CMS",
+          "subskills":"Wordpress, Umbraco"
+        },
+        {
+          "name" : "Telecomunications",
+          "subskills":"3G and 4G networks, HLR/HSS/AuC, eNodeB, TCP/IP Networks, Signal watermarking"
+        },
+        {
+          "name" : "Electronics",
+          "subskills":"Basic audio circuit design, NODE MCU, Soldering, "
+        },
+        {
+          "name" : "Other frameworks",
+          "subskills":"OpenCV, PyGame, Google Test, PyTest"
+        }
+      ]
+    },
+    {
+      "name" : "Non-technical Skills",
+      "skills" : [
+        {
+          "name" : "Languages",
+          "subskills":"English (fluent), Russian (basic)"
+        },
+        {
+          "name" : "Work methodologies",
+          "subskills":"Scrum methodology, Agile developement"
+        },
+        {
+          "name" : "Driving lincense",
+          "subskills":"Cat. B"
+        },
+        {
+          "name" : "Music Production",
+          "subskills":"recording, mix, mastering, live mix"
+        },
+        {
+          "name" : "Other",
+          "subskills":"Beer brewing! :)"
+        }
+      ]
+    }
+
+  ]
+
+}

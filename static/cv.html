@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="/static/css/timeline.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/cards.css">
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script defer src="/static/js/jquery-3.2.1.min.js"></script>
+  <script defer src="/static/js/display.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"
+    integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Wide card with share menu button -->
+  <div class="white-section">
+    <h1>Hi! I&#39;m Chris</h1>
+    <div class="mdl-grid mdl-grid center-items">
+
+      <div class="card profile-card-wide mdl-card mdl-shadow--2dp">
+        <div class='mdl-card__title'
+          style="background: url('/static/img/profilepic.jpg') center / cover">
+          <h2 class="mdl-card__title-text">Krzysztof Kokosiński</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Programmer, developer, sound engeneering and beer brewing hobbyst.
+        </div>
+      </div>
+
+      <div class="card info-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text info-card-contents">
+          <table class="personal_data">
+            
+            <tr>
+              <th>born:</th>
+              <td>10.06.1987</td>
+            </tr>
+            
+            <tr>
+              <th>address:</th>
+              <td>Rabczańska 16, <br>30-698 Kraków</td>
+            </tr>
+            
+            <tr>
+              <th>e-mail:</th>
+              <td>kokosiarz@gmail.com</td>
+            </tr>
+            
+            <tr>
+              <th>mobile:</th>
+              <td>+48 531 044 134</td>
+            </tr>
+            
+          </table>
+
+          <div class="social">
+            
+            <a href="https://www.facebook.com/kokosiarz"><img src="/static/img/facebook.png"></img></a>
+            
+            <a href="https://www.instagram.com/grandmaenjoysmusic/"><img src="/static/img/instagram.png"></img></a>
+            
+            <a href="https://github.com/kokosiarz/"><img src="/static/img/github.png"></img></a>
+            
+            <a href="https://www.instagram.com/grandmaenjoysmusic/"><img src="/static/img/soundcloud.png"></img></a>
+            
+          </div>
+          <div class="button">
+            <button class="mdl-button mdl-button--raised" onclick="cv2pdf()">GET PDF VERSION</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="timeline" class="timeline">
+    <div class="entries">
+      <div class="entry">
+        <div class="title">2019</div>
+        <div class="body">
+          <p class="">Full stack developer Javascript (React/NodeJS/Elasticsearch/Docker) / Scrum master</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">2018</div>
+        <div class="body">
+          <p class="">C++/Erlang Developer/Tester, eNodeB, Ericsson sp z o.o.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">2016</div>
+        <div class="body">
+          <p class="">Front-End, websites: <a href="http://magdalenamaslerz.pl/">magdalenamaslerz.pl</a>,
+            <a href="http://blog.szkolazlotnictwa.pl/">blog.szkolazlotnictwa.pl</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">2015</div>
+        <div class="body">
+          <p class="">ORACLE Java Standard Edition 6 Programmer certificate</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">2014</div>
+        <div class="body">
+          <p class="">ISTQB: Foundation Certificate in Software Testing</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">2013</div>
+        <div class="body">
+          <p class="">Front-End, websites: <a href="http://magdalenamaslerz.pl/">szkolazlotnictwa.pl</a>,
+            <a href="http://dustbowl.pl/">dustbowl.pl</a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">2011</div>
+        <div class="body">
+          <p>C/Assembler/C++ Developer, Core Networks, Ericpol sp z o.o.</p>
+          <p>Master Degree in Electronics and Telecommunications, AGH University of Science and Technology</p>
+          <p>Master Thesis: Analysis of Digital Watermarking in Spatial and Selected Spectral Domains</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title">2010</div>
+        <div class="body">
+          <p>Developer/Tester of robust image watermarking scenarios, INDECT Project, AGH University of Science and
+            Technology</p>
+        </div>
+      </div>
+      <div class="entry programming">
+        <div class="title">2009-2010</div>
+        <div class="body">
+          <p>Russian Philology, Pedagogical University of Cracow</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="title big">2003-2006</div>
+        <div class="body">
+          <p>VIII Liceum Ogólnokształcące Im. Stanisława Wyspiańskiego w Krakowie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-section container">
+
+    <div class="skills">
+
+      <h1>Skills</h1>
+
+      
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp skills-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">programming languages</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          
+          <div class="skill-level">
+
+            <label><span >
+                TypeScript / Javascript</span></label>
+            
+            
+            <div id="skill_level_1592984779416" class="mdl-progress mdl-js-progress"></div>
+            <script>
+              document.querySelector("#skill_level_1592984779416").addEventListener('mdl-componentupgraded', function () {
+                this.MaterialProgress.setProgress(80);
+                });
+            </script>
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span >
+                Python 3</span></label>
+            
+            
+            <div id="skill_level_1592984785072" class="mdl-progress mdl-js-progress"></div>
+            <script>
+              document.querySelector("#skill_level_1592984785072").addEventListener('mdl-componentupgraded', function () {
+                this.MaterialProgress.setProgress(60);
+                });
+            </script>
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span >
+                C++</span></label>
+            
+            
+            <div id="skill_level_1592984673224" class="mdl-progress mdl-js-progress"></div>
+            <script>
+              document.querySelector("#skill_level_1592984673224").addEventListener('mdl-componentupgraded', function () {
+                this.MaterialProgress.setProgress(20);
+                });
+            </script>
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span >
+                Erlang</span></label>
+            
+            
+            <div id="skill_level_1592984673336" class="mdl-progress mdl-js-progress"></div>
+            <script>
+              document.querySelector("#skill_level_1592984673336").addEventListener('mdl-componentupgraded', function () {
+                this.MaterialProgress.setProgress(20);
+                });
+            </script>
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span >
+                SQL</span></label>
+            
+            
+            <div id="skill_level_1592984673448" class="mdl-progress mdl-js-progress"></div>
+            <script>
+              document.querySelector("#skill_level_1592984673448").addEventListener('mdl-componentupgraded', function () {
+                this.MaterialProgress.setProgress(20);
+                });
+            </script>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp skills-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Tools</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Version control</span></label>
+            
+            <span class="subskills">: Git, Gitlab, IBM Clearcase, Gerrit</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Kanban tools:</span></label>
+            
+            <span class="subskills">: Jira, Scrummy</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Operating Systems (user level)</span></label>
+            
+            <span class="subskills">: Windows, Linux</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Software</span></label>
+            
+            <span class="subskills">: VSCode, Eclipse, Wireshark, Reaper DAW, DaVinci Resolve, Gimp, Inkscape, Darktable, MS Office, Open Office</span>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp skills-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Other</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Protocols</span></label>
+            
+            <span class="subskills">: TCP/IP, Diameter, LDAP</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Design concepts</span></label>
+            
+            <span class="subskills">: Clean Architecture, Programming Patterns</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Web frameworks</span></label>
+            
+            <span class="subskills">: React, Vue, JQuery, Google Material Design, Bootstrap, Flask, Express</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                CMS</span></label>
+            
+            <span class="subskills">: Wordpress, Umbraco</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Telecomunications</span></label>
+            
+            <span class="subskills">: 3G and 4G networks, HLR/HSS/AuC, eNodeB, TCP/IP Networks, Signal watermarking</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Electronics</span></label>
+            
+            <span class="subskills">: Basic audio circuit design, NODE MCU, Soldering, </span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Other frameworks</span></label>
+            
+            <span class="subskills">: Pandas, Numpy, OpenCV, PyGame, Google Test, PyTest</span>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp skills-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Non-technical Skills</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Languages</span></label>
+            
+            <span class="subskills">: English (fluent), Russian (basic)</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Work methodologies</span></label>
+            
+            <span class="subskills">: Scrum methodology, Agile developement</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Driving lincense</span></label>
+            
+            <span class="subskills">: Cat. B</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Music Production</span></label>
+            
+            <span class="subskills">: recording, mix, mastering, live mix</span>
+            
+            
+          </div>
+          
+          <div class="skill-level">
+
+            <label><span  class="skill-category" >
+                Other</span></label>
+            
+            <span class="subskills">: Beer brewing! :)</span>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="white-section">
+
+    <h1>Projects</h1>
+
+    <div id="overlay-text">
+      <button id="webdesign-button" class="mdl-button mdl-js-button" onclick="toggleVisibility('webdesign')">Web
+        Design</button>
+      <button id="sound-button" class="mdl-button mdl-js-button" onclick="toggleVisibility('sound')">Sound</button>
+      <button id="filmmaking-button" class="mdl-button mdl-js-button" onclick="toggleVisibility('filmmaking')">Film
+        Making</button>
+      <button id="brewing-button" class="mdl-button mdl-js-button"
+        onclick="toggleVisibility('brewing')">Brewing</button>
+    </div>
+
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">GEM Website</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p> I made this webpage for me - the audio mixer. </p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://www.grandmaenjoysmusic.pl/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card sound DSP">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Space Tracker</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p> I wanted to have a plugin for dynamically solving frequency clashes between different tracks of musical projects. Current version is a prototype developed in JSFX. V++ VST/AAX version developement is pending</p><p> JSFX, typescript, IPlug, c++ </p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://www.grandmaenjoysmusic.pl/plugins" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card data science">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Fault Detection criteria</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p> This year I had opportunity to help with an RND task of optimizing fault detection algorithm and finding optimal operational parameters for it.</p><p> Python, Pandas, Scipy </p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://www.grandmaenjoysmusic.pl/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">drugiplan.com</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>In cooperation with Arkadiusz Salawa, we have created an online reservation service for wedding gadgets suplier. </p><p>Wordpress + Woocommerce + jQuery + CSS</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://drugiplan.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">szkolazlotnictwa.pl</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>This is the third version of page I have made for Szkoła Złotnictwa. From Wordpress through .NET/Umbraco to React, evolution of this page reflects my journey through technologies.</p><p>Technologies: React, Material UI</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://szkolazlotnictwa.pl/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">harmonogram</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>When I was working only on 4/5 time i needed tool to calculate how much hours should I spend at work, and to report my worktime. This is how Harmonogram Tool started.</p>><p>jQuery + Javascript + HTML + CSS</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="/harmonogram/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">blog.szkolazlotnictwa.pl</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Another project for Szkola Zlotnictwa was to create a blog for sharing school's activities and knowledge from field of Jewelry. As what was needed was a simple to maintain blog we decided to use a standard WP template.</p><p>Technologies: Wordpress</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="blog.szkolazlotnictwa.pl" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Client management system for Szkoła Złotnictwa</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Another cooperation with Szkoła Złotnictwa. This time it is custom client management system, able to store financial info, timeplans and issue invoices.</p><p>Technologies: Django, Bootstrap, jQuery</p>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Zbigniew Kokosiński homepage</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>When my father said that he needs to refresh his homepage I kneew it will be an interesting task. He insisted on having his minimalistic page in plain HTML so he could edit it himself.</p><p>Technologies: HTML, Bootstrap</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://riad.pk.edu.pl/~zk/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">magdalenamaslerz.pl</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Magdalena is contemporary jewelry maker. She wanted me to make a bilingual webpage for her, so she could shere photos of her work, posts and links. We decided to set our starting point with template using masonry.js and modify it according to the needs.</p><p>Technologies: Wordpress, masonry.js, polylang</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://magdalenamaslerz.pl/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">This portfolio</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>In the 90s everybody who had internet connection and some HTML know-how had a homepage. Today we have our Twitters, Instagrams, Facebooks, but I decided to regain control of my internet visit-card and made this page :)</p><p>Technologies: Flask, JSON, Material Design Lite</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Refresh
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card webdesign sound">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Dust Bowl</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p> From year 2011 I have been guitar and keyboard player in a blues-rock band Dust Bowl. Together we have played several gigs and recorder an EP </p><p>When we decided, that we need a webpage, I was the one to do it ;) (Bootstrap + Umbraco CMS) </p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://dustbowl.pl/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit &amp; Listen
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card sound">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Profanus EP</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+          <p>One day in 2016 old friend of mine called me and asked whether I would help his band record an EP. And that is how my deep plunge into death metal started. </p><p>All parts, except for drums, were recorded by me in my homestudio. I also did mix, mastering, and a little bit of produ... Oh, nevermind, just take a listen if you wish:
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://profanus.bandcamp.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Listen
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card sound filmmaking">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Circle Placid</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Playing in a blues band is really cool thing to do, but after a hundread 12-bar blueses played and milion of pentatonic trips all over the fretboard you may start to think of some change.</p><p>Change has come as a cooperation with Jerry on vocals and me basically doing everything else. Our first approach was 'let's become avant-garde of the new wave of polish black metal!'. Did we manage to? Not really, but we still do like the output :)</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://www.youtube.com/watch?v=a74ASPC34ew&amp;list=PLekQG6L6JMJ2KLAWBngrNhRViY5bmu1xJ" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Listen
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card brewing">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">&gt;&gt;Gęstwa&lt;&lt; Brewery</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>There is a point in every mans life, when he feels he should do something important in his life. Like brew a beer.</p><p>Our first beer was a stout. We started brewing straight from malt, no umanly extracts allowed. And thats how it started, since now we have brewed about 20 beers, (I hope this page is up to date! :D) mainly with strong american hop character.</p><p>If you know polish you can read about it on Jerry's blog:</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="http://jerrybrewery.pl/tag/warzenie/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Visit
+        </a>
+      </div>
+      
+    </div>
+    
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp project-card sound filmmaking">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Miasto z OFF&#39;u</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+                  <p>What is better a challange for amateur photographer, and music producer, than a movie project? </p><p>During hot summer of 2012 I had opportunity to work with amazing people on polish-belarusian cinemathographic project >>Masto z OFF'u<<. The idea was simple: integrate young people from Poland and Belarus while teaching them filmmaking and shooting independent footage with one common element: the city. During project I had opportunity to try my chances in acting, operating camera, score writing and sound production.</p>
+      </div>
+      
+      <div class="mdl-card__actions mdl-card--border">
+        <a href="https://www.youtube.com/watch?v=7JhxEmQ0fLk" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Watch
+        </a>
+      </div>
+      
+    </div>
+    
+  </div>
+
+</body>
+
+</html>

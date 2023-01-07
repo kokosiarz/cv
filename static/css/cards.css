@@ -1,0 +1,75 @@
+.card{
+  margin: 30px;
+}
+
+.card.profile-card-wide {
+	margin-right: 0px;
+	min-height: 500px;
+}
+.card.info-card-wide {
+	margin-left: 10px;
+	min-height: 500px;
+  display: block;
+}
+
+
+.profile-card-wide.mdl-card {
+  width: 512px;
+}
+.profile-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 492px;
+}
+.profile-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.personal_data {
+  font-size: 1.2rem;
+}
+
+.personal_data th {
+	text-align: right;
+	padding: 10px;
+}
+.social, .button {
+  text-align: center;
+}
+
+
+.info-card-contents {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.social img {
+  margin: 10px;
+}
+.button {
+  margin: 20px
+}
+
+
+.mdl-card__supporting-text {
+  text-align: left;
+}
+
+/* SKILL CARDS OPTIONS */
+
+.skill-level {
+  margin-bottom: 10px;
+}
+
+.project-card, .skills-card {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px
+}
+
+.grayed-out {
+  color: gray;
+}
+
+.mdl-button:focus:not(:active) {
+    background-color: #FFF !important;
+}
